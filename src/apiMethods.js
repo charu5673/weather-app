@@ -1,4 +1,5 @@
 import './style.css';
+import * as moon from './moon.js';
 const fns=require("date-fns");
 function createQueryString(date1,date2,location)
 {
@@ -42,8 +43,10 @@ function processData(response)
     let days=[];
     for(var i=0;i<7;i++)
     {
+        let pd=response.days[i]["datetime"];
+        pd=new Date(pd);
         let o={
-            date: response.days[i]["datetime"],
+            date: pd,
             maxtemp: response.days[i]["tempmax"],
             mintemp: response.days[i]["tempmin"],
             temp: response.days[i]["temp"],
@@ -54,12 +57,11 @@ function processData(response)
             raincover: response.days[i]["precipcover"],
             snow: response.days[i]["snow"],
             snowdepth: response.days[i]["snowdepth"],
-            pressure: response.days[i]["pressure"],
             cloudcover: response.days[i]["cloudcover"],
             visibility: response.days[i]["visibility"],
-            sunrise: response.days[i]["sunrise"],
-            sunset: response.days[i]["sunset"],
-            moonphase: response.days[i]["moonphase"],
+            sunrise: response.days[i]["sunrise"].substring(0,5),
+            sunset: response.days[i]["sunset"].substring(0,5),
+            moonphase: moon.moonPhase(response.days[i]["moonphase"]),
             brief: response.days[i]["conditions"],
             detailed: response.days[i]["description"],
             icon: response.days[i]["icon"],
@@ -74,3 +76,4 @@ function processData(response)
         days: days,
     };
 }
+

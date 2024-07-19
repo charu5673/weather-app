@@ -15,42 +15,42 @@ export function moonPhase(value)
     };
     if(value==0||value==1)
     {
-        o.name="New moon";
+        o.name="new-moon";
         o.img=icon1;
     }
     else if(value<0.25)
     {
-        o.name="Waxing crescent";
+        o.name="waxing-crescent";
         o.img=icon2;
     }
     else if(value==0.25)
     {
-        o.name="First quarter";
+        o.name="first-quarter";
         o.img=icon3;
     }
     else if(value<0.5)
     {
-        o.name="Waxing gibbous";
+        o.name="waxing-gibbous";
         o.img=icon4;
     }
     else if(value==0.5)
     {
-        o.name="Full moon";
+        o.name="full-moon";
         o.img=icon5;
     }
     else if(value<0.75)
     {
-        o.name="Waning gibbous";
+        o.name="waning-gibbous";
         o.img=icon6;
     }
     else if(value==0.75)
     {
-        o.name="Last quarter";
+        o.name="last-quarter";
         o.img=icon7;
     }
     else if(value<1)
     {
-        o.name="Waning crescent";
+        o.name="waning-crescent";
         o.img=icon8;
     }
     return o;
