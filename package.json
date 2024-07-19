@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  },
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "odin weather app project",
+  "main": "script.js",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
