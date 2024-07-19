@@ -8,85 +8,85 @@
 </head>
 <body>
     <header>
-        <div class="search_area">
+        <div class="left"><div class="search_area">
             <input type="text" class="search_bar">
             <button class="search_button"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
         </div>
         <button class="switch_temp">In Celsius</button>
-        <p class="icon_credits"></p>
+        <button class="icon_credits">Credits</button></div>
         <img class="logo">
     </header>
     <main>
-        <div class="info"></div>
-        <div class="cards">
-            <div class="card closed">
-                <div class="card_grid">
-                    <div class="card_temperature">
-                        <p class="main_temp fahrenheit">45F</p>
-                        <p class="feelslike fahrenheit">Feels like: 30F</p>
-                        <p class="min_temp fahrenheit">Lowest: 23F</p>
-                        <p class="max_temp fahrenheit">Highest: 54F</p>
-                        <p class="main_temp celsius" hidden>45F</p>
-                        <p class="feelslike celsius" hidden>Feels like: 30F</p>
-                        <p class="min_temp celsius" hidden>Lowest: 23F</p>
-                        <p class="max_temp celsius" hidden>Highest: 54F</p>
-                    </div>
-                    <div class="sun_times">
-                        <div class="sunrise">
-                            <img class="sunrise_icon" src="../src/sunrise.png">
-                            <p class="sunrise_time">Sunrise: 6:00AM</p>
-                        </div>
-                        <div class="sunset">
-                            <p class="sunset_time">Sunset: 6:00PM</p>
-                            <img class="sunset_icon" src="../src/sunset.png">
-                        </div>
-                    </div>
-                    <div class="card_icons">
-                        <img class="weather_icon" src="../src/weather-icons/fog.png">
-                        <img class="moon_phase" src="../src/moon-phases/full-moon.png">
-                        <div class="probability">
-                            <p class="percentage">34%</p>
-                            <p class="precipitate_type">of Rain</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="brief">breif info ttyrrhgefikutyj</div>
-                <button class="expand_card"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, -1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.2929 15.2893C18.6834 14.8988 18.6834 14.2656 18.2929 13.8751L13.4007 8.98766C12.6195 8.20726 11.3537 8.20757 10.5729 8.98835L5.68257 13.8787C5.29205 14.2692 5.29205 14.9024 5.68257 15.2929C6.0731 15.6835 6.70626 15.6835 7.09679 15.2929L11.2824 11.1073C11.673 10.7168 12.3061 10.7168 12.6966 11.1073L16.8787 15.2893C17.2692 15.6798 17.9024 15.6798 18.2929 15.2893Z" fill="#0F0F0F"></path> </g></svg></button>
-            </div>
-            <div class="card opened">
-                <div class="row1">
-                    <div class="card_temperature">
-                        <p class="main_temp fahrenheit">45F</p>
-                        <p class="feelslike fahrenheit">Feels like: 30F</p>
-                        <p class="min_temp fahrenheit">Lowest: 23F</p>
-                        <p class="max_temp fahrenheit">Highest: 54F</p>
-                        <p class="main_temp celsius" hidden>45F</p>
-                        <p class="feelslike celsius" hidden>Feels like: 30F</p>
-                        <p class="min_temp celsius" hidden>Lowest: 23F</p>
-                        <p class="max_temp celsius" hidden>Highest: 54F</p>
-                    </div>
-                    <img class="weather_icon">
-                </div>
-                <p class="row2">detailed inof fgtyerdhuj efuwdnjim eyfbruncdijmk</p>
-                <p class="row3">humidity: gtyhu<br>type of precipitation: rain</p>
-                <p class="row4">probability: 32 cover: 34</p>
-                <div class="row5">
-                    <p>cloud cover:<br>visibility: </p>
-                    <p hidden>snow:<br>snow depth: </p>
-                </div>
-                <div class="moon_phases row5">
-                    <img class="phase1 selected">
-                    <img class="phase2 selected">
-                    <img class="phase3 selected">
-                    <img class="phase4 selected">
-                    <img class="phase5 selected">
-                    <img class="phase6 selected">
-                    <img class="phase7 selected">
-                    <img class="phase8 selected">
-                </div>
-                <button class="contract_card row6"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.2929 15.2893C18.6834 14.8988 18.6834 14.2656 18.2929 13.8751L13.4007 8.98766C12.6195 8.20726 11.3537 8.20757 10.5729 8.98835L5.68257 13.8787C5.29205 14.2692 5.29205 14.9024 5.68257 15.2929C6.0731 15.6835 6.70626 15.6835 7.09679 15.2929L11.2824 11.1073C11.673 10.7168 12.3061 10.7168 12.6966 11.1073L16.8787 15.2893C17.2692 15.6798 17.9024 15.6798 18.2929 15.2893Z" fill="#0F0F0F"></path> </g></svg></button>
-            </div>
+        <div class="info">
+            <p class="address">Location: </p>
+            <p class="timezone">Timezone: </p>
+            <p class="latitude">Latitude: </p>
+            <p class="longitude">Longitude: </p>
+        </div>
+        <div class="frame"><div class="cards">
+            
+        </div></div>
+        <div class="current_card">
+            
         </div>
     </main>
+    <dialog><div><a href="https://www.freepik.com/search">snow</a>
+        
+        <a href="https://www.freepik.com/search">rain</a>
+        
+        
+        <a href="https://www.freepik.com/search">fog</a>
+        
+        
+        <a href="https://www.freepik.com/search">wind</a>
+        
+        
+        <a href="https://www.freepik.com/search">cloudy</a>
+        
+        
+        <a href="https://www.freepik.com/search">partly-cloudy-day</a>
+        
+        
+        <a href="https://www.freepik.com/search">partly-cloud-night</a>
+        
+        
+        <a href="https://www.freepik.com/search">clear-day</a>
+        
+        
+        <a href="https://www.freepik.com/search">clear-night</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/moon">new moon</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/crescent">waxing crescent</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/first-quarter">first quarter</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/waxing">waxing gibbous</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/moon">full moon</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/gibbous">waning gibbous</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/last-quarter">last quarter</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/crescent">waning crescent</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/sunrise">sunrise</a>
+        
+        
+        <a href="https://www.flaticon.com/free-icons/sunset">sunset</a>
+        
+        
+        <a href="https://www.behance.net/alifinart">font</a>
+    </div></dialog>
 </body>
 </html>
