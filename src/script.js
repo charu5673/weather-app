@@ -51,3 +51,25 @@ document.querySelector("dialog").addEventListener("click",function(e){
 });
 
 searchStart("london");
+
+navigator.geolocation.getCurrentPosition(searchUserCity,()=>{console.log("no location :(");},{enableHighAccuracy: true });
+
+async function searchUserCity(pos)
+{
+    let r;
+    await fetch(createQueryLocation(pos.coords.latitude,pos.coords.longitude), {mode: 'cors'})
+    .then(function(response) {
+    return response.json();
+    })
+    .then(function(response) {
+    r=response[0].name;
+    }).catch(error=>{
+        r="error";
+    });
+    searchStart(r);
+}
+
+function createQueryLocation(lat,long)
+{
+    return `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=1&appid=17e97440e9f9705415f68f238b4e2021`;
+}

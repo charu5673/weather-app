@@ -76,4 +76,3 @@ function processData(response)
         days: days,
     };
 }
-
