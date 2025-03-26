@@ -160,6 +160,7 @@ main
 
 .card
 {
+    cursor: pointer;
     width: 330px;
     height: 400px;
     background: linear-gradient(#EEF0F5, #81EBEB);
