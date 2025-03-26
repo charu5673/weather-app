@@ -71,5 +71,5 @@ async function searchUserCity(pos)
 
 function createQueryLocation(lat,long)
 {
-    return `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=1&appid=17e97440e9f9705415f68f238b4e2021`;
+    return `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=1&appid=17e97440e9f9705415f68f238b4e2021`;
 }
